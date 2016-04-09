@@ -1,16 +1,16 @@
 {
-  "name": "select-component",
+  "name": "RockSelect",
   "version": "0.0.1",
-  "description": "It is a select component of react.j",
+  "description": "It is a select component of react.js",
   "main": "app.js",
   "scripts": {
-    "test": "chai"
+    "test": "chai",
+    "go": "webpack-dev-server --progress --colors"
   },
   "author": "Gerardo Gallegos",
   "license": "MIT",
   "dependencies": {
     "react": "^0.14.8",
-    "react-addons-create-fragment": "^15.0.1",
     "react-dom": "^0.14.8"
   },
   "devDependencies": {
