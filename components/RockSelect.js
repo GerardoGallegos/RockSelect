@@ -71,18 +71,26 @@ export default class RockSelect extends Component {
     this.optionSelected = event.target.textContent
     this.classes.option = `${CLASS_ALIAS}__option`
     this.classes.selected = `${CLASS_ALIAS}__selected`
-    this.props.options.map((option) => {
-      if (option.value === event.target.textContent) {
-        option.click(event.target.textContent)
+
+    if(typeof this.props.options[0] === 'string') {
+      if(this.props.generalClick) {
+        this.props.generalClick(event.target.textContent)
       }
-    })
+    }
+    else if(typeof this.props.options[0] === 'object') {
+      this.props.options.map((option) => {
+        if (option.value === event.target.textContent) {
+          option.click(event.target.textContent)
+        }
+      })
+    }
+
     this.hideOptions()
     this.forceUpdate()
   }
 
   renderOptions(){
     if(typeof this.props.options[0] === 'string') {
-      console.log('string')
       return (
         this.props.options.map((option)=>{
           return (

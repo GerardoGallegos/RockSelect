@@ -1,29 +1,29 @@
-function hola(e){
-  console.log('hola ' + e)
+function hello(info){
+  console.log('hello ' + info)
 }
 
-function bye(e){
-  console.log('bye ' + e)
+function bye(info){
+  console.log('bye ' + info)
 }
 
 
 
 export const DATA = [
   {
-    value : 'Fresa',
-    click : hola
+    value : 'Cherry',
+    click : hello
   },
   {
-    value : 'manzana',
-    click : hola
+    value : 'Apple',
+    click : hello
   },
   {
-    value : 'Pera',
-    click : bye
+    value : 'Pear',
+    click : hello
   },
   {
-    value : 'Melon',
-    click : hola
+    value : 'Watermelon',
+    click : hello
   }
 
 ]
@@ -31,11 +31,11 @@ export const DATA = [
 export const DATA3 = [
   {
     value : 'javascript',
-    click : hola
+    click : hello
   },
   {
     value : 'html',
-    click : hola
+    click : hello
   },
   {
     value : 'css',
@@ -43,7 +43,7 @@ export const DATA3 = [
   },
   {
     value : 'typescript',
-    click : hola
+    click : hello
   }
 
 ]
@@ -51,35 +51,35 @@ export const DATA3 = [
 export const DATA2 = [
   {
     value : 'Slow',
-    click : hola
+    click : hello
   },
   {
     value : 'Typing',
-    click : hola
+    click : hello
   },
   {
     value : 'ChunkGo',
-    click : hola
+    click : hello
   },
   {
     value : 'Slipy3D',
-    click : hola
+    click : hello
   },
   {
     value : 'Slipy13D',
-    click : hola
+    click : hello
   },
   {
     value : 'SlipZ32D',
-    click : hola
+    click : hello
   },
   {
     value : 'FadeIn',
-    click : hola
+    click : hello
   },
   {
     value : 'UpSale',
-    click : hola
+    click : hello
   }
 
 ]
