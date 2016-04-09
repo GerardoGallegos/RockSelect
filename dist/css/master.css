@@ -1,0 +1,134 @@
+@import url(./icons.css);
+.RockMenu {
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  display: inline-block;
+  padding: 5px;
+  background-color: #333333;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  font-family: 'PT Sans';
+  float: left;
+  margin-left: 4px;
+}
+
+.RockMenu__selected {
+  padding: 10px 35px;
+  background-color: #333333;
+  color: #00FFFF;
+  position: relative;
+  z-index: 50;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.RockMenu__selected:hover {
+  color: #ffa132;
+}
+
+.RockMenu__selected-active {
+  padding: 10px 35px;
+  background-color: #00FFFF;
+  color: #333333;
+  position: relative;
+  z-index: 50;
+  border-bottom: 1px solid #4d4d4d;
+  box-shadow: 1px 1px 19px rgba(0, 0, 0, 0.98);
+}
+
+.RockMenu__selected__ico {
+  display: inline-block;
+}
+
+.RockMenu__selected__name {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.RockMenu__option {
+  text-align: right;
+  color: #FFEB3B;
+}
+
+.RockMenu__option:hover {
+  background-color: #404040;
+}
+
+.RockMenu__option__name {
+  padding: 15px 35px 15px 35px;
+}
+
+.RockMenu__line {
+  width: 8px;
+  position: absolute;
+  background-color: #00FFFF;
+  top: 10px;
+  bottom: 15px;
+  right: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.RockMenu__option-animaIn {
+  -webkit-animation: tu 0.4s ease;
+          animation: tu 0.4s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.RockMenu__option-animaOut {
+  -webkit-animation: hideOptions 0.4s ease;
+          animation: hideOptions 0.4s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes tu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes tu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes hideOptions {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-140px);
+            transform: translateY(-140px);
+  }
+}
+
+@keyframes hideOptions {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-140px);
+            transform: translateY(-140px);
+  }
+}
