@@ -9,7 +9,11 @@ Fancy and simple Select option component in react.js
 You can pass a simple list of string and specify the function that will trigger in every click on the options
 
 ```javascript
+// Import dependencies 
+import React from 'react'
 import { render } from 'react-dom';
+
+// Import RockSelect
 import RockSelect from './components/RockSelect'
 
 let foo = ()=>{
@@ -39,7 +43,11 @@ const OPTIONS = [
 ### Full Example
 
 ```javascript
+// Import dependencies 
+import React from 'react'
 import { render } from 'react-dom';
+
+// Import RockSelect
 import RockSelect from './components/RockSelect'
 
 let foo = ()=>{
