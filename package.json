@@ -1,13 +1,13 @@
 {
   "name": "RockSelect",
-  "version": "0.0.1",
-  "description": "It is a select component of react.js",
-  "main": "app.js",
+  "version": "0.1.0",
+  "description": "Fancy and simple Select option component in react.js",
+  "main": "./components/RockSelect.js",
   "scripts": {
     "test": "chai",
     "start": "webpack-dev-server --progress --colors"
   },
-  "author": "Gerardo Gallegos",
+  "author": "Gerardo Gallegos <puxerop@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "react": "^0.14.8",
