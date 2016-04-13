@@ -94,6 +94,7 @@ options | List of options items | Array | [ ]
 defaultValue | Default Select option | String | first Option in the list 
 generalClick | This method is triggered, each onClick in any options | Function(value) | -
 iconClass | Class applied to icon via font icon or background image | String| ' '
+classAlias | customice className for styles ex. "RockSelect__option" | String | 'RockSelect'
 
 ## Development
 
