@@ -130,7 +130,7 @@ export default class RockSelect extends Component {
   // Update in every update default Value, avoid conflict with multiples RockSelects
   componentWillReceiveProps(nextProps) {
     if(nextProps.defaultValue !== this.props.defaultValue) {
-      this.optionSelected = this.props.defaultValue
+      this.optionSelected = nextProps.defaultValue
       this.forceUpdate()
     }
   }
