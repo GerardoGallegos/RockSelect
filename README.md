@@ -9,7 +9,7 @@ Fancy and simple Select option component in react.js
 You can pass a simple list of string and specify the function that will trigger in every click on the options
 
 ```javascript
-// Import dependencies 
+// Import dependencies
 import React from 'react'
 import { render } from 'react-dom';
 
@@ -43,7 +43,7 @@ const OPTIONS = [
 ### Full Example
 
 ```javascript
-// Import dependencies 
+// Import dependencies
 import React from 'react'
 import { render } from 'react-dom';
 
@@ -63,15 +63,15 @@ let baz = ()=>{
 }
 
 const OPTIONS = [
-     { 
+     {
         value : 'Option 1',
         click : foo
      },
-     { 
+     {
         value : 'Option 2',
         click : bar
      },
-     { 
+     {
         value : 'Option3',
         click : baz
      }
@@ -88,12 +88,12 @@ render(
 ## API
 ### Select props
 
-name | description | type | default 
+name | description | type | default
 ------------ | ---- | ------------- | --------------
-options | List of options items | Array | [ ] 
-defaultValue | Default Select option | String | first Option in the list 
+options | List of options items | Array | [ ]
+defaultValue | Default Select option | String | first Option in the list
 generalClick | This method is triggered, each onClick in any options | Function(value) | -
-iconClass | Class applied to icon via font icon or background image | String| ' '
+iconClass | Class applied to icon via iconfont  or background image | String| ' '
 classAlias | customice className for styles ex. "RockSelect__option" | String | 'RockSelect'
 
 ## Development
@@ -102,4 +102,4 @@ classAlias | customice className for styles ex. "RockSelect__option" | String | 
 npm install
 npm start
 ```
-http://localhost:8080/webpack-dev-server/
+go to this url: http://localhost:8080/webpack-dev-server/
