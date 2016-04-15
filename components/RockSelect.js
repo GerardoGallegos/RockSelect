@@ -146,3 +146,13 @@ export default class RockSelect extends Component {
     )
   }
 }
+
+// Add the proptypes
+
+RockSelect.propTypes = {
+  options : PropTypes.array.isRequired,
+  defaultValue : PropTypes.string,
+  generalClick : PropTypes.func,
+  iconClass : PropTypes.string,
+  classAlias : PropTypes.string,
+}
