@@ -127,6 +127,14 @@ export default class RockSelect extends Component {
     }
   }
 
+  // Update in every update default Value, avoid conflict with multiples RockSelects
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.defaultValue !== this.props.defaultValue) {
+      this.optionSelected = this.props.defaultValue
+      this.forceUpdate()
+    }
+  }
+
 
   render(){
     const ICON = this.props.iconClass ? `${this.CLASS_ALIAS}__selected__ico ${this.props.iconClass}` : `${this.CLASS_ALIAS}__selected__ico`
